@@ -575,3 +575,58 @@ border-radius: 80px;}
 }
 
 
+@media screen {
+   *{
+      width: auto;
+      height: auto;
+   }
+   
+}
+.animation{
+   border: double yellowgreen 5px;
+   overflow: hidden;
+}
+
+
+@media screen and (max-width:700px){
+   .center-part{ 
+      display: block;
+      margin-top: 15px;
+      
+   }
+   .center-part , .hobby , .address , .skills , .study{
+      margin-top: 15px;
+      margin-left: 35px;
+       
+   }
+   .my-intro{
+      display: block;
+   }
+   .intro-main .side-bar{
+      display: flex;
+
+         }
+         .intro-main .buttons{
+            display: block;
+            margin-top: 10px;
+         }
+         .buttons button{
+            margin-top: 15px;
+         }
+
+         .About-me{
+            display: block;
+            font-size: 15px;
+
+         }
+         .About-me button{
+            display: block;
+            margin-top: 15px;
+         }
+         .About-me .dtl-img{
+            margin-top:50px ;
+         }
+         .nav{
+            margin-left: 10px;
+         }
+}
