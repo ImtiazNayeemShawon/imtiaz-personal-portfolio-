@@ -22,9 +22,9 @@ body{
    transition: 2s;
 }
 .nav-button {
+   display: flex;
 
- display: flex;
- margin-left:520px ;
+  
 
 }
 .nav-button a{
@@ -54,10 +54,11 @@ body{
                     border-top: 0;
                     border-bottom: 0;
                     display: block;
-                    width: 200px
+                    max-width: 200px
 }
 .side-bar a{
    text-decoration: none;
+   max-width: 10px;
 }
 
 .side-bar h3:hover{
@@ -190,7 +191,7 @@ margin: 0;
 .dtl-img{
    background-image: url(images/OBJECTS.png);
    border-radius: 200px 5px;
-   width: 500px;
+   max-width: 500px;
    margin-left: 100px;
   
 }
@@ -588,45 +589,155 @@ border-radius: 80px;}
 }
 
 
-@media screen and (max-width:700px){
-   .center-part{ 
-      display: block;
-      margin-top: 15px;
+@media screen and (max-width:768px){
+   /*navigation*/
+   .navigation-bar a{
+         font-size: 13px;
+        
+   }
+   .side-bar h3{
+      display: none;
+   }
+   .side-bar a{
+      display: none;
+   }
+   .navigation-bar .nav-button button{
+      display: none;
+   }
+ .nav-icon {
+display: none;
+ }
+
+ .side-bar {
+   display: none;
+ }
+ .my-intro{
+   margin-left: 5px;
+ }
+ .my-intro .intro-main h1,h3 {
+   text-align: center;
+   
+ }
+.intro-main h1{
+font-size: 45px;
+}
+.intro-main h2{
+   text-align: center;
+   font-size: 25px;
+ 
+}
+.intro-main .dtls {
+         display: block;
+   font-size: 17px;
+
+}
+.dtls p{
+   text-align: center;
+}
+
+ .my-intro{
+   display: grid;
+   grid-template-columns:repeat(auto-fit,minmax(400px,1fr)) ;
+      margin-right: 20px;
+   }
+   .buttons{
+      justify-content: center;
+   }
+   .buttons #gb {
+      
+      font-size: 17px;
+      border-radius: 7px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 17px;
+      padding-left: 17px;
       
    }
-   .center-part , .hobby , .address , .skills , .study{
-      margin-top: 15px;
-      margin-left: 35px;
+   .buttons #ab {
+      
+      font-size: 17px;
+      border-radius: 7px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 17px;
+      padding-left: 17px;
+      
+   }
+   .intro-txt{
+      margin-left: 5px;
+   }
+   .side-img{
+   margin-left: 1px;
+   margin-right: 5px;
+   }
+     .side-img img{
+     max-width: 270px;
+     max-height:270px ;
+     margin-left: 0;
+     }
+     .About-me .details{
+      margin-left: 3px;
+      max-width: fit-content;
+
+     }
+     .details p{
+        text-align: center;
+        max-width: 350px;
        
-   }
-   .my-intro{
-      display: block;
-   }
-   .intro-main .side-bar{
-      display: flex;
+     }
+     .details #k{
+        font-size: 15px;
+        line-height: 25px;
+     }
+     .details .buttons{
+        margin-left: 50px;
+     }
+     .dtl-img img{
+        max-width: 250px;
+        max-height: 300px;
+        margin-left: 20px;
+     }
+     .dtl-img{
+        margin-top: 35px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width:400px;
+     }
+     .dtl-img:hover{
+      transition: 4s;
+      transform: rotate(0deg);
+     }
+     .center-part >div{
+        max-height: 250px;
+        max-width: 250px;
+        border-radius: 7px;
+      justify-self: center;
+     }
+     .center-part p{
+        font-size: 15px;
+     }
+     .center-part i{
+        font-size: 30px;
+     }
+     .animation{
+        max-width: fit-content;
+        max-height: 200px;
+     }
 
-         }
-         .intro-main .buttons{
-            display: block;
-            margin-top: 10px;
-         }
-         .buttons button{
-            margin-top: 15px;
-         }
+}
+/*grid tamplet */
 
-         .About-me{
-            display: block;
-            font-size: 15px;
-
-         }
-         .About-me button{
-            display: block;
-            margin-top: 15px;
-         }
-         .About-me .dtl-img{
-            margin-top:50px ;
-         }
-         .nav{
-            margin-left: 10px;
-         }
+.navigation-bar{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
+.About-me{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+}
+.center-part{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   grid-row-gap: 20px;
+   justify-content: center;
 }
