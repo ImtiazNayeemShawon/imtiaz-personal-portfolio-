@@ -17,6 +17,10 @@ body{
    transition: 1s;
   
 }
+
+#k{
+text-transform: uppercase;
+}
 .side-img:hover{
    transform: scale(1.1);
    transition: 2s;
@@ -306,6 +310,7 @@ margin: 0;
  }
  .animation{
     display: flex;
+    max-height: 200px;
    
  }
  .f-box{
@@ -626,13 +631,42 @@ font-size: 45px;
    font-size: 25px;
  
 }
+#sk{
+display: none;
+}
+.skill-range{
+   justify-content: center;
+}
+.skill-range>div{
+max-width: 350px;
+margin-left: 1px;
+
+
+}
+.service>div{
+  
+   height: 200px;
+   
+}
+.service h1{
+   font-size: 20px;
+}
+.service p{
+   font-size: 12px;
+}
 .intro-main .dtls {
          display: block;
    font-size: 17px;
 
 }
-.dtls p{
-   text-align: center;
+.center-part>div{
+   display: none;
+}
+.center-part{
+   display: none;
+}
+.animation{
+   display: none;
 }
 
  .my-intro{
@@ -681,7 +715,7 @@ font-size: 45px;
 
      }
      .details p{
-        text-align: center;
+        
         max-width: 350px;
        
      }
@@ -708,9 +742,9 @@ font-size: 45px;
       transform: rotate(0deg);
      }
      .center-part >div{
-        max-height: 250px;
-        max-width: 250px;
-        border-radius: 7px;
+        max-height: 150px;
+        max-width: 400px;
+        border-radius: 20px;
       justify-self: center;
      }
      .center-part p{
@@ -740,4 +774,190 @@ grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
    grid-row-gap: 20px;
    justify-content: center;
+}
+
+
+
+/* all about */
+.all-about{
+   background-color: rgb(1, 1, 32);
+}
+.all-about {
+   display: grid;
+  
+}
+.all-about #sk{
+   margin-top: 50px;
+ justify-self: center;
+ border-radius: 20px;
+ padding-left: 150px;
+ padding-right: 150px;
+ border: none;
+   background-color: #4b4e5e;
+}
+.all-about h1{
+ text-transform: uppercase;
+   font-family: sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.all-about .skill-range{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
+   grid-column-gap:100px;
+   grid-row-gap:10px ;
+   justify-content: center;
+}
+.all-about hr{
+  height: 10px;
+}
+.skill-range>div{
+ 
+   background-color: #4b4e5e;
+   max-height: 120px;
+   border-radius: 5px;
+   border: 2px solid rgb(56, 55, 53);
+   margin-left: 5px;
+   
+}
+.skill-range span {
+   
+   color: #ffff;
+   font-size: 20px;
+   text-align:center;
+   font-family: sans-serif;
+}
+.skill-range div>p{
+   text-transform: capitalize;
+   margin-left: 10px;
+   color: #ffff;
+   font-size: 20px;
+   text-align: left;
+   font-family: sans-serif;
+}
+.skill-range .html hr{
+   background-color: red;
+   max-width: 400px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.css hr{
+   background-color: rgb(17, 30, 151);
+   max-width: 300px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.skill-range .js hr{
+   background-color: rgb(214, 218, 15);
+   max-width: 200px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.skill-range .Cpp hr{
+   background-color: rgb(48, 6, 6);
+   max-width: 130px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.skill-range .react hr{
+   background-color: rgb(3, 34, 83);
+   max-width: 80px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.skill-range .bootstrap hr{
+   background-color: rgb(162, 154, 231);
+   max-width: 200px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border: none;
+}
+.html:hover{
+ background-color:green;
+ transition: 2s;
+ 
+}
+.bootstrap:hover{
+   background-color: rgb(31, 32, 32);
+   transition: 2s;
+}
+.Cpp:hover{
+   background-color: rgb(86, 10, 156);
+   transition: 2s;
+}
+.js:hover{
+background-color: rgb(136, 129, 126);
+transition: 2s;
+}
+.css:hover{
+background-color: #e3eb10;
+transition: 2s;
+}
+.react:hover{
+   transform: scale(1);
+   background-color: #8e8f7e;
+   transition: 2s;
+}
+.wh h1{
+   color: white;
+   font-family: sans-serif;
+   text-transform: uppercase;
+    max-width: fit-content;
+    background-color: #4b4e5e;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px #353538 ;
+    cursor: pointer;
+}
+.wh{
+display: grid;
+justify-content: center;
+}
+.service{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+   justify-content: center;
+   grid-gap: 10px;
+}
+.service>div{
+   justify-self: center;
+   
+}
+.service i{
+color: white;
+font-size: 50px;
+justify-items: center;
+margin-left: 130px;
+margin-top: 20px;
+
+
+}
+.service>div{
+   background-color: #353538;
+   max-width: 300px;
+   max-height: 300px;
+   justify-content: center;
+   padding: 20px;
+   border: 2px solid #353538;
+   border-radius: 20px;
+   box-shadow: 5px 5px 10px rgb(12, 77, 199);
+}
+.service h1{
+   color: rgb(219, 192, 192);
+   font-family: sans-serif;
+   text-align: center;
+}
+.service p{
+   font-size: 15px;
+   font-family: sans-serif;
+   color: rgb(150, 137, 137);
+   text-align: center;
+   text-transform: uppercase;
 }
