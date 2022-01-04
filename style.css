@@ -612,7 +612,9 @@ border-radius: 80px;}
  .nav-icon {
 display: none;
  }
-
+.skill-range{
+   margin-left: 2px;
+}
  .side-bar {
    display: none;
  }
@@ -638,16 +640,73 @@ display: none;
    justify-content: center;
 }
 .skill-range>div{
-max-width: 350px;
+max-width: 300px;
+height: 70px;
 margin-left: 1px;
 
 
 }
-.service>div{
-  
-   height: 200px;
+.center-part{
    
+   margin-top: 0px;
 }
+.skill-range>div p{
+   font-size: 7px;
+}
+.all-about{
+   margin-top: 2px;
+}
+.skill-range{
+   margin-top: 1px;
+}
+.skill-range>div{
+   margin-top: 20px;
+}
+.skill-range .js hr{
+   background-color: rgb(214, 218, 15);
+   width: 100px;
+   height: 4px;
+}
+.skill-range .html hr{
+ 
+   width: 200px;
+   height: 4px;
+}
+.skill-range .css hr{
+ 
+   width: 150px;
+   height: 4px;
+}
+.skill-range .bootstrap hr{
+ 
+   width: 120px;
+   height: 4px;
+}
+.skill-range .react hr{
+ width: 50px;
+ height: 4px;
+}
+.skill-range .Cpp hr{
+ 
+   width:70px;
+ height: 4px;
+  
+}
+
+
+.skill-range div>p{
+   font-size: 10px;
+}
+.skill-range span p{
+   font-size: 15px;
+}
+.skill-range .html  p{
+   font-size: 16px;
+}
+.skill-range hr{
+  height: 1px;
+}
+/*.................*/
 .service h1{
    font-size: 20px;
 }
@@ -814,7 +873,7 @@ grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
 .skill-range>div{
  
-   background-color: #4b4e5e;
+   background-color: #475ac4;
    max-height: 120px;
    border-radius: 5px;
    border: 2px solid rgb(56, 55, 53);
@@ -858,7 +917,7 @@ grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
    border: none;
 }
 .skill-range .Cpp hr{
-   background-color: rgb(48, 6, 6);
+   background-color: rgb(64, 45, 109);
    max-width: 130px;
    margin-left: 10px;
    border-radius: 10px;
@@ -960,4 +1019,31 @@ margin-top: 20px;
    color: rgb(150, 137, 137);
    text-align: center;
    text-transform: uppercase;
+}
+#demo{
+   color: white;
+   font-family: sans-serif;
+}
+@media screen and (max-width:768px){
+.wh h1{
+ font-size: 20px;
+ margin-top: 60px;
+
+ margin-left: 1px;
+ margin-right: 1px;
+}
+.service i{
+font-size: 30px;
+}
+.service h1{
+   font-size:15px
+}
+.service p{
+   font-size: 10px;
+}
+.service>div{
+   padding: 5px;
+   margin-top: 20px;
+   width: 300px;
+}
 }
